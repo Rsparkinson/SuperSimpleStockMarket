@@ -1,11 +1,5 @@
 package uk.co.rparkinson.SuperSimpleStockMarket.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
 public class share {
 
     private int c_id;
@@ -22,7 +16,7 @@ public class share {
       return c_id;
     }
 
-    public void setId(String p_id) {
+    public void setId(int p_id) {
       c_id = p_id;
     }
 
@@ -39,7 +33,7 @@ public class share {
     }
 
     public void setType(String p_type) {
-      if (p_type.equalsignorecase("Preferred")) {
+      if (p_type.equalsIgnoreCase("Preferred")) {
         c_type = "Preferred";
       } else {
         c_type = "Common";

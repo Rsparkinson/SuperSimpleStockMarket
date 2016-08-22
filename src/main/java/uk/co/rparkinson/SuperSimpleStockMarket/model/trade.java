@@ -1,6 +1,5 @@
 package uk.co.rparkinson.SpringTest.model;
 
-@Entity
 public class trade {
     private int c_id;
     private long c_timeStamp;
@@ -49,7 +48,7 @@ public class trade {
     }
 
     public void setType(String p_type) {
-      if (p_type.equalsignorecase("buy")) {
+      if (p_type.equalsIgnoreCase("buy")) {
         c_type = "buy";
       } else {
         c_type = "sell";
