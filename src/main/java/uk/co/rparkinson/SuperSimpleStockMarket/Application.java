@@ -1,8 +1,5 @@
 package uk.co.rparkinson.SuperSimpleStockMarket;
 
-// import uk.co.rparkinson.SuperSimpleStockMarket.model.*;
-// import uk.co.rparkinson.SuperSimpleStockMarket.service.*;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

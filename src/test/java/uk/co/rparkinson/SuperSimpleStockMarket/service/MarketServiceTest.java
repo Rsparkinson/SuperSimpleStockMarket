@@ -217,4 +217,39 @@ public class MarketServiceTest extends AbstractTest {
         Assert.assertNotNull("failure - expected not null", list);
     }
 
+    @Test
+    public void testDividendYieldCommon() {
+        float t_result = service.dividendYieldCommon(100, 10);
+        Assert.assertEquals(10f, t_result, 0.0001f);
+    }
+
+    @Test
+    public void testDividendYieldPreferred() {
+        float t_result = service.dividendYieldPreferred(0.02f, 10f, 12.12f);
+        Assert.assertEquals(0.01650f, t_result, 0.0001f);
+    }
+
+    @Test
+    public void testPERatio() {
+        float t_result = service.PERatio(12.12f, 100f);
+        Assert.assertEquals(8.25082f, t_result, 0.0001f);
+    }
+
+    @Test
+    public void testGeometricMean() {
+        float[] t_prices = {10f, 51.2f, 8};
+
+        float t_result = service.geometricMean(t_prices);
+        Assert.assertEquals(16f, t_result, 0.0001f);
+    }
+
+    @Test
+    public void testVolumeWeightStockPrice() {
+        float[] t_prices = {10.3f, 5.1f, 8f};
+        int[] t_qty = {10, 51, 8};
+
+        float t_result = service.volumeWeightStockPrice(t_prices, t_qty);
+        Assert.assertEquals(6.18985f, t_result, 0.0001f);
+    }
+
 }

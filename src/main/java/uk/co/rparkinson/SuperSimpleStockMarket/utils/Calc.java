@@ -1,4 +1,4 @@
-package uk.co.rparkinson.SuperSimpleStockMarket.db;
+package uk.co.rparkinson.SuperSimpleStockMarket.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,25 +8,25 @@ public class Calc {
   private static final Logger logger
     = LoggerFactory.getLogger(Calc.class);
 
-  public float dividendYieldCommon(float p_lastDividend, float p_price) {
+  public static float dividendYieldCommon(float p_lastDividend, float p_price) {
     float r_dividendYield = p_lastDividend / p_price;
 
     return r_dividendYield;
   }
 
-  public float dividendYieldPreferred(float p_fixedDividend, float p_parValue, float  p_price) {
+  public static float dividendYieldPreferred(float p_fixedDividend, float p_parValue, float  p_price) {
     float r_dividendYield = (p_fixedDividend * p_parValue) / p_price;
 
     return r_dividendYield;
   }
 
-  public float PERatio(float  p_price, float p_Dividend) {
+  public static float PERatio(float  p_price, float p_Dividend) {
     float r_PERatio = p_Dividend / p_price;
 
     return r_PERatio;
   }
 
-  public float geometricMean(float[]  p_price) {
+  public static float geometricMean(float[]  p_price) {
     float r_GeometricMean = 0f, t_product = 0f;
 
     if (p_price.length > 1) {
@@ -39,7 +39,7 @@ public class Calc {
     return r_GeometricMean;
   }
 
-  public float volumeWeightStockPrice(float[]  p_price, int[] p_qty) {
+  public static float volumeWeightStockPrice(float[]  p_price, int[] p_qty) {
     float r_volumeWeightStockPrice = 0, t_sumPriceQty = 0f, t_sumQty = 0f;
 
     if ((p_qty.length != p_price.length)&&(p_qty.length > 1)) {

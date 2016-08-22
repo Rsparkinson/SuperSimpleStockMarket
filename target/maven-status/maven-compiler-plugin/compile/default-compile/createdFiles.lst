@@ -1,5 +1,5 @@
 uk/co/rparkinson/SuperSimpleStockMarket/service/MarketServiceBean.class
-uk/co/rparkinson/SuperSimpleStockMarket/db/Calc.class
+uk/co/rparkinson/SuperSimpleStockMarket/utils/Calc.class
 uk/co/rparkinson/SuperSimpleStockMarket/model/trade.class
 uk/co/rparkinson/SuperSimpleStockMarket/db/tradeDB.class
 uk/co/rparkinson/SuperSimpleStockMarket/Application.class

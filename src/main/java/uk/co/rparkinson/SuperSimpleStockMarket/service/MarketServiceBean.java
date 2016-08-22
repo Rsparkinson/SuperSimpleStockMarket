@@ -2,6 +2,7 @@ package uk.co.rparkinson.SuperSimpleStockMarket.service;
 
 import uk.co.rparkinson.SuperSimpleStockMarket.model.*;
 import uk.co.rparkinson.SuperSimpleStockMarket.db.*;
+import uk.co.rparkinson.SuperSimpleStockMarket.utils.*;
 
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,7 @@ public class MarketServiceBean implements MarketService {
 
     private shareDB shareDB;
     private tradeDB tradeDB;
+    private Calc Clac;
 
   @Override
   public void loadData() {
@@ -90,4 +92,35 @@ public class MarketServiceBean implements MarketService {
   public void deleteShare(int p_id) {
     shareDB.remove(p_id);
   }
+
+  @Override
+  public float dividendYieldCommon(float p_lastDividend, float p_price) {
+      float r_dividendYield = Calc.dividendYieldCommon(p_lastDividend, p_price);
+      return r_dividendYield;
+  }
+
+  @Override
+  public float dividendYieldPreferred(float p_fixedDividend, float p_parValue, float  p_price) {
+    float r_dividendYield = Calc.dividendYieldPreferred(p_fixedDividend, p_parValue, p_price);
+    return r_dividendYield;
+  }
+
+  @Override
+  public float PERatio(float  p_price, float p_Dividend) {
+    float r_PERatio = Calc.PERatio(p_price, p_Dividend);
+    return r_PERatio;
+  }
+
+  @Override
+  public float geometricMean(float[]  p_price) {
+    float r_GeometricMean = Calc.geometricMean(p_price);
+    return r_GeometricMean;
+  }
+
+  @Override
+  public float volumeWeightStockPrice(float[]  p_price, int[] p_qty) {
+    float r_volumeWeightStockPrice = Calc.volumeWeightStockPrice(p_price, p_qty);
+    return r_volumeWeightStockPrice;
+  }
+
 }

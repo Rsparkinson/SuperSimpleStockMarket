@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.733 sec - in uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.676 sec - in uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest
