@@ -1,5 +1,6 @@
 /home/richard/GitHub/SuperSimpleStockMarket/src/main/java/uk/co/rparkinson/SuperSimpleStockMarket/model/trade.java
 /home/richard/GitHub/SuperSimpleStockMarket/src/main/java/uk/co/rparkinson/SuperSimpleStockMarket/db/tradeDB.java
+/home/richard/GitHub/SuperSimpleStockMarket/src/main/java/uk/co/rparkinson/SuperSimpleStockMarket/utils/Calc.java
 /home/richard/GitHub/SuperSimpleStockMarket/src/main/java/uk/co/rparkinson/SuperSimpleStockMarket/db/shareDB.java
 /home/richard/GitHub/SuperSimpleStockMarket/src/main/java/uk/co/rparkinson/SuperSimpleStockMarket/model/share.java
 /home/richard/GitHub/SuperSimpleStockMarket/src/main/java/uk/co/rparkinson/SuperSimpleStockMarket/controller/MarketController.java
