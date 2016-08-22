@@ -157,8 +157,4 @@ public class shareDB {
     return r_share;
   }
 
-  public static void delete(int p_id) {
-    remove(p_id);
-  }
-
 }

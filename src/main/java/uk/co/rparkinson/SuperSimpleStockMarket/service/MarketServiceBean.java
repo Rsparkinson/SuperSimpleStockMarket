@@ -19,11 +19,13 @@ public class MarketServiceBean implements MarketService {
   private static final Logger logger
     = LoggerFactory.getLogger(MarketServiceBean.class);
 
-  private shareDB shareDB;
+    private shareDB shareDB;
+    private tradeDB tradeDB;
 
   @Override
   public void loadData() {
     shareDB.init();
+    tradeDB.init();
   }
 
   @Override
@@ -45,6 +47,29 @@ public class MarketServiceBean implements MarketService {
   }
 
   @Override
+  public Collection<trade> findLast15minsTrades() {
+    Collection<trade> r_trades = tradeDB.findLast15mins();
+    return r_trades;
+  }
+
+  @Override
+  public Collection<trade> findAlltrades() {
+    Collection<trade> r_trades = tradeDB.findAll();
+    return r_trades;
+  }
+
+  @Override
+  public trade findTrade(int p_id) {
+    trade r_trade = tradeDB.find(p_id);
+    return r_trade;
+  }
+
+  @Override
+  public trade createTrade(trade p_trade) {
+    return tradeDB.create(p_trade);
+  }
+
+  @Override
   public share createShare(share p_share) {
     return shareDB.create(p_share);
   }
@@ -63,6 +88,6 @@ public class MarketServiceBean implements MarketService {
 
   @Override
   public void deleteShare(int p_id) {
-    shareDB.delete(p_id);
+    shareDB.remove(p_id);
   }
 }

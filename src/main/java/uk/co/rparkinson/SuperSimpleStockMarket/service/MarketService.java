@@ -7,11 +7,14 @@ import java.util.Collection;
 public interface MarketService {
 
   void loadData();
-  Collection<share> findAll();
-  // share find(int p_id);
-  // share find(String p_Symbol);
-  // share create(share p_share);
-  // share update(share p_share);
-  // void delete(int p_id);
-
+  Collection<share> findAllshares();
+  share findShare(int p_id);
+  share findShare(String p_Symbol);
+  Collection<trade> findLast15minsTrades();
+  Collection<trade> findAlltrades();
+  trade findTrade(int p_id);
+  trade createTrade(trade p_trade);
+  share createShare(share p_share);
+  share updateShare(share p_share);
+  void deleteShare(int p_id);
 }

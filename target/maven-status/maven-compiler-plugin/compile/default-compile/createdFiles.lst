@@ -1,5 +1,6 @@
 uk/co/rparkinson/SuperSimpleStockMarket/service/MarketServiceBean.class
-uk/co/rparkinson/SpringTest/model/trade.class
+uk/co/rparkinson/SuperSimpleStockMarket/model/trade.class
+uk/co/rparkinson/SuperSimpleStockMarket/db/tradeDB.class
 uk/co/rparkinson/SuperSimpleStockMarket/Application.class
 uk/co/rparkinson/SuperSimpleStockMarket/controller/MarketController.class
 uk/co/rparkinson/SuperSimpleStockMarket/service/MarketService.class

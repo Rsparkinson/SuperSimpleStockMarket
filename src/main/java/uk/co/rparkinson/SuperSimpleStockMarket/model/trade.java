@@ -1,4 +1,4 @@
-package uk.co.rparkinson.SpringTest.model;
+package uk.co.rparkinson.SuperSimpleStockMarket.model;
 
 public class trade {
     private int c_id;
