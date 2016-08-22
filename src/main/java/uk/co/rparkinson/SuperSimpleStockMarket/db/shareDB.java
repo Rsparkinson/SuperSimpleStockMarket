@@ -116,12 +116,49 @@ public class shareDB {
     } catch(Exception e) {
       logger.error("shareDB 5 init " + e);
     }
-
   }
 
   public static Collection<share> findAll() {
     Collection<share> r_shares = shareMap.values();
     return r_shares;
+  }
+
+  public static share find(int p_id) {
+    share r_share = shareMap.get(p_id);
+    return r_share;
+  }
+
+  public static share find(String p_Symbol) {
+    share r_share = null;
+
+    for(int i=1;i<shareMap.size() + 1;i++) {
+      try {
+        if (shareMap.get(i).getSymbol().equals(p_Symbol)) {
+          r_share = shareMap.get(i);
+        }
+      } catch(Exception e) {
+        logger.error("ShareDB find symbol " + e);
+      }
+    }
+    return r_share;
+  }
+
+  public static share create(share p_share) {
+    return save(p_share);
+  }
+
+  public static share update(share p_share) {
+    share r_share = null;
+    share shareToUpdate = find(p_share.getId());
+    if (shareToUpdate != null) {
+      r_share = save(p_share);
+    }
+
+    return r_share;
+  }
+
+  public static void delete(int p_id) {
+    remove(p_id);
   }
 
 }

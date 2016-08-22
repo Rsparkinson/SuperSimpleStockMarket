@@ -28,9 +28,9 @@ public class MarketController {
   @RequestMapping("/")
   String home() {
 
-      MarketService.loadData();
+      //MarketService.loadData();
 
-      Collection<share> r_shares = MarketService.findAll();
+      //Collection<share> r_shares = MarketService.findAll();
 
     // //i. Given any price as input, calculate the dividend yield
     //     String t_symbol = "TEA";

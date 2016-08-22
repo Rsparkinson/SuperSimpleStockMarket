@@ -27,54 +27,42 @@ public class MarketServiceBean implements MarketService {
   }
 
   @Override
-  public Collection<share> findAll() {
+  public Collection<share> findAllshares() {
     Collection<share> r_shares = shareDB.findAll();
     return r_shares;
   }
 
-  // @Override
-  // public share find(int p_id) {
-  //   share r_share = shareMap.get(p_id);
-  //   return r_share;
-  // }
-  //
-  // @Override
-  // public share find(String p_Symbol) {
-  //   share r_share = null;
-  //
-  //   for(int i=1;i<shareMap.size() + 1;i++) {
-  //     try {
-  //       if (shareMap.get(i).getSymbol().equals(p_Symbol)) {
-  //         r_share = shareMap.get(i);
-  //       }
-  //     } catch(Exception e) {
-  //       logger.error("ShareServiceBean find symbol " + e);
-  //     }
-  //   }
-  //
-  //   return r_share;
-  // }
-  //
-  // @Override
-  // public share create(share p_share) {
-  //   return save(p_share);
-  // }
-  //
-  // @Override
-  // public share update(share p_share) {
-  //
-  //   share shareToUpdate = find(p_share.getId());
-  //   if (shareToUpdate == null) {
-  //       logger.error(
-  //               "Attempted to update a Share, but the entity does not exist.");
-  //       throw new NoResultException("Requested entity not found.");
-  //   }
-  //
-  //   return save(p_share);
-  // }
-  //
-  // @Override
-  // public void delete(int p_id) {
-  //   remove(p_id);
-  // }
+  @Override
+  public share findShare(int p_id) {
+    share r_share = shareDB.find(p_id);
+    return r_share;
+  }
+
+  @Override
+  public share findShare(String p_Symbol) {
+    share r_share = shareDB.find(p_Symbol);
+    return r_share;
+  }
+
+  @Override
+  public share createShare(share p_share) {
+    return shareDB.create(p_share);
+  }
+
+  @Override
+  public share updateShare(share p_share) {
+    share r_share = shareDB.update(p_share);
+    if (r_share == null) {
+        logger.error(
+                "Attempted to update a Share, but the entity does not exist.");
+        throw new NoResultException("Requested entity not found.");
+    }
+
+    return r_share;
+  }
+
+  @Override
+  public void deleteShare(int p_id) {
+    shareDB.delete(p_id);
+  }
 }
