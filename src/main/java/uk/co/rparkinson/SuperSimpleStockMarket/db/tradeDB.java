@@ -92,7 +92,7 @@ public class tradeDB {
     Date d = new Date();
     long t_cutOffTime = d.getTime() - (15 * 60);
 
-    for (int i=1;i<tradeMap.size();i++) {
+    for (int i=1;i<=tradeMap.size();i++) {
         trade t_trade = tradeMap.get(i);
         if (tradeMap.get(i).getTimeStamp() > t_cutOffTime) {
           r_trades.add(tradeMap.get(i));

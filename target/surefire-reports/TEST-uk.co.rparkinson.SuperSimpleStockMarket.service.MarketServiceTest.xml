@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.116" tests="20" errors="0" skipped="0" failures="0">
+<testsuite name="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.118" tests="20" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -61,22 +61,22 @@
   </properties>
   <testcase name="testPERatio" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.058"/>
   <testcase name="testFindAllshares" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.001"/>
-  <testcase name="testVolumeWeightStockPrice" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.002"/>
+  <testcase name="testVolumeWeightStockPrice" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testFindLast15mins" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
-  <testcase name="testCreateShareWithId" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
-  <testcase name="testUpdateShare" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.004"/>
+  <testcase name="testCreateShareWithId" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.006"/>
+  <testcase name="testUpdateShare" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testCreateShare" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testCreateTrade" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testFindOneShare" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testFindOneTrade" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testGeometricMean" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testFindSymbol" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
-  <testcase name="testUpdateShareNotFound" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
-  <testcase name="testNotFindOneShare" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
-  <testcase name="testNotFindOneTrade" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.004"/>
-  <testcase name="testNotFindSymbol" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.005"/>
+  <testcase name="testUpdateShareNotFound" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.002"/>
+  <testcase name="testNotFindOneShare" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.007"/>
+  <testcase name="testNotFindOneTrade" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.001"/>
+  <testcase name="testNotFindSymbol" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.004"/>
   <testcase name="testDividendYieldPreferred" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
   <testcase name="testDelete" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
-  <testcase name="testDividendYieldCommon" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.002"/>
-  <testcase name="testFindAllTrades" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.004"/>
+  <testcase name="testDividendYieldCommon" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
+  <testcase name="testFindAllTrades" classname="uk.co.rparkinson.SuperSimpleStockMarket.service.MarketServiceTest" time="0.003"/>
 </testsuite>

@@ -131,7 +131,7 @@ public class shareDB {
   public static share find(String p_Symbol) {
     share r_share = null;
 
-    for(int i=1;i<shareMap.size() + 1;i++) {
+    for(int i=1;i<=shareMap.size() + 1;i++) {
       try {
         if (shareMap.get(i).getSymbol().equals(p_Symbol)) {
           r_share = shareMap.get(i);
