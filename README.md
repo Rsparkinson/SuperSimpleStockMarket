@@ -2,7 +2,7 @@
 <h4 style="text-align: left;">by Richard Parkinson&nbsp;</h4>
 <hr />
 <p style="text-align: left;">&nbsp;</p>
-<p>Welcome to my solution to the &ldquo;Example Assignment &ndash; Super Simple Stock Market&rdquo;. &nbsp;All source and unit test is included here.</p>
+<p>Welcome to my solution to the &ldquo;Example Assignment &ndash; Super Simple Stock Market&rdquo;. &nbsp;All source and unit test are included here.</p>
 <p>&nbsp;</p>
 <p>Developed on</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ubuntu Linux 15.10</p>
