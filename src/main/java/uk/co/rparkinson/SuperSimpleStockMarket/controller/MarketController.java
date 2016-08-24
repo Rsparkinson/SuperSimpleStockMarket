@@ -72,7 +72,7 @@ public class MarketController {
         trade t_trade = new trade();
         t_trade.setSymbol("POP");
         t_trade.setQty(120);
-        t_trade.setType("Buy");
+        t_trade.setType(trade.tradetype.buy);
         t_trade.setTradePrice(888.88f);
 
         trade t_returnTrade = MarketService.createTrade(t_trade);

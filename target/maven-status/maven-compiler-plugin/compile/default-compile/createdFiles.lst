@@ -1,3 +1,4 @@
+uk/co/rparkinson/SuperSimpleStockMarket/model/trade$tradetype.class
 uk/co/rparkinson/SuperSimpleStockMarket/service/MarketServiceBean.class
 uk/co/rparkinson/SuperSimpleStockMarket/utils/Calc.class
 uk/co/rparkinson/SuperSimpleStockMarket/model/trade.class
@@ -6,4 +7,5 @@ uk/co/rparkinson/SuperSimpleStockMarket/Application.class
 uk/co/rparkinson/SuperSimpleStockMarket/controller/MarketController.class
 uk/co/rparkinson/SuperSimpleStockMarket/service/MarketService.class
 uk/co/rparkinson/SuperSimpleStockMarket/db/shareDB.class
+uk/co/rparkinson/SuperSimpleStockMarket/model/share$sharetype.class
 uk/co/rparkinson/SuperSimpleStockMarket/model/share.class

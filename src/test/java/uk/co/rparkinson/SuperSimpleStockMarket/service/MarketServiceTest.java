@@ -77,7 +77,7 @@ public class MarketServiceTest extends AbstractTest {
 
         share entity = new share();
         entity.setSymbol("JOE");
-        entity.setType("Common");
+        entity.setType(share.sharetype.Common);
         entity.setLastDividend(13f);
         entity.setFixedDividend(0f);
         entity.setParValue(250f);
@@ -97,7 +97,7 @@ public class MarketServiceTest extends AbstractTest {
         share entity = new share();
         entity.setId(Integer.MAX_VALUE);
         entity.setSymbol("JOE");
-        entity.setType("Common");
+        entity.setType(share.sharetype.Common);
         entity.setLastDividend(13f);
         entity.setFixedDividend(0f);
         entity.setParValue(250f);
@@ -141,7 +141,7 @@ public class MarketServiceTest extends AbstractTest {
         share entity = new share();
         entity.setId(Integer.MAX_VALUE);
         entity.setSymbol("XXX");
-        entity.setType("Common");
+        entity.setType(share.sharetype.Common);
         entity.setLastDividend(999f);
         entity.setFixedDividend(999f);
         entity.setParValue(999f);
@@ -175,7 +175,7 @@ public class MarketServiceTest extends AbstractTest {
         trade entity = new trade();
         entity.setSymbol("POP");
         entity.setQty(10);
-        entity.setType("Buy");
+        entity.setType(trade.tradetype.buy);
         entity.setTradePrice(12.12f);
 
         trade createdEntity = service.createTrade(entity);

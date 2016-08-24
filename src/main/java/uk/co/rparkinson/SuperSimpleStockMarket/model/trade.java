@@ -1,11 +1,15 @@
 package uk.co.rparkinson.SuperSimpleStockMarket.model;
 
 public class trade {
+    public enum tradetype {
+        buy, sell;
+    };
+
     private int c_id;
     private long c_timeStamp;
     private String c_symbol;
     private int c_qty;
-    private String c_type; //buy || sell
+    private tradetype c_type;
     private float c_tradePrice;
 
     public trade() {
@@ -43,16 +47,12 @@ public class trade {
       c_qty = p_qty;
     }
 
-    public String getType() {
+    public tradetype getType() {
       return c_type;
     }
 
-    public void setType(String p_type) {
-      if (p_type.equalsIgnoreCase("buy")) {
-        c_type = "buy";
-      } else {
-        c_type = "sell";
-      }
+    public void setType(tradetype p_type) {
+        c_type = p_type;
     }
 
     public Float getTradePrice() {
@@ -65,6 +65,6 @@ public class trade {
 
     public String toString() {
       return "id:" + c_id + " symbol:" + c_symbol + " timeStamp:" + c_timeStamp + " qty:" + c_qty
-        + " type:" + c_type + " tradePrice:" + c_tradePrice;
+        + " type:" + c_type.toString() + " tradePrice:" + c_tradePrice;
     }
 }

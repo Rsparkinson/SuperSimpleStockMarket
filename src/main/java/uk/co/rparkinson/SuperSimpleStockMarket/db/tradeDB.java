@@ -46,7 +46,7 @@ public class tradeDB {
       trade entity = new trade();
       entity.setSymbol("TEA");
       entity.setQty(10);
-      entity.setType("Buy");
+      entity.setType(trade.tradetype.buy);
       entity.setTradePrice(12.12f);
       save(entity);
     } catch(Exception e) {
@@ -57,7 +57,7 @@ public class tradeDB {
       trade entity = new trade();
       entity.setSymbol("GIN");
       entity.setQty(107);
-      entity.setType("Buy");
+      entity.setType(trade.tradetype.buy);
       entity.setTradePrice(1762.12f);
       save(entity);
     } catch(Exception e) {
@@ -68,7 +68,7 @@ public class tradeDB {
       trade entity = new trade();
       entity.setSymbol("JOE");
       entity.setQty(140);
-      entity.setType("Buy");
+      entity.setType(trade.tradetype.buy);
       entity.setTradePrice(12.45f);
       save(entity);
     } catch(Exception e) {
@@ -79,7 +79,7 @@ public class tradeDB {
       trade entity = new trade();
       entity.setSymbol("ALE");
       entity.setQty(100);
-      entity.setType("Sell");
+      entity.setType(trade.tradetype.sell);
       entity.setTradePrice(132.12f);
       save(entity);
     } catch(Exception e) {

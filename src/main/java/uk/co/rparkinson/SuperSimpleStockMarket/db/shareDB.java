@@ -60,7 +60,7 @@ public class shareDB {
     try {
       share s1 = new share();
       s1.setSymbol("TEA");
-      s1.setType("Common");
+      s1.setType(share.sharetype.Common);
       s1.setLastDividend(0f);
       s1.setFixedDividend(0f);
       s1.setParValue(100f);
@@ -72,7 +72,7 @@ public class shareDB {
     try {
       share s2 = new share();
       s2.setSymbol("POP");
-      s2.setType("Common");
+      s2.setType(share.sharetype.Common);
       s2.setLastDividend(8f);
       s2.setFixedDividend(0f);
       s2.setParValue(100f);
@@ -84,7 +84,7 @@ public class shareDB {
     try {
       share s3 = new share();
       s3.setSymbol("ALE");
-      s3.setType("Common");
+      s3.setType(share.sharetype.Common);
       s3.setLastDividend(23f);
       s3.setFixedDividend(0f);
       s3.setParValue(60f);
@@ -96,7 +96,7 @@ public class shareDB {
     try {
       share s4 = new share();
       s4.setSymbol("GIN");
-      s4.setType("Preferred");
+      s4.setType(share.sharetype.Preferred);
       s4.setLastDividend(8f);
       s4.setFixedDividend(0.02f);
       s4.setParValue(100f);
@@ -108,7 +108,7 @@ public class shareDB {
     try {
       share s5 = new share();
       s5.setSymbol("JOE");
-      s5.setType("Common");
+      s5.setType(share.sharetype.Common);
       s5.setLastDividend(13f);
       s5.setFixedDividend(0f);
       s5.setParValue(250f);

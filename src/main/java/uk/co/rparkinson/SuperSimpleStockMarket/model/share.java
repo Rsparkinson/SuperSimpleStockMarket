@@ -1,10 +1,13 @@
 package uk.co.rparkinson.SuperSimpleStockMarket.model;
 
 public class share {
+    public enum sharetype {
+        Common, Preferred;
+    };
 
     private int c_id;
     private String c_symbol;
-    private String c_type; // Common || Preferred
+    private sharetype c_type;
     private float c_lastDividend;
     private float c_fixedDividend;
     private float c_parValue;
@@ -28,16 +31,12 @@ public class share {
       c_symbol = p_symbol;
     }
 
-    public String getType() {
+    public sharetype getType() {
       return c_type;
     }
 
-    public void setType(String p_type) {
-      if (p_type.equalsIgnoreCase("Preferred")) {
-        c_type = "Preferred";
-      } else {
-        c_type = "Common";
-      }
+    public void setType(sharetype p_type) {
+        c_type = p_type;
     }
 
     public Float getLastDividend() {
@@ -65,7 +64,7 @@ public class share {
     }
 
     public String toString() {
-      return "id:" + c_id + " symbol:" + c_symbol + " type:" + c_type
+      return "id:" + c_id + " symbol:" + c_symbol + " type:" + c_type.toString()
         + " lastDividend:" + c_lastDividend + " fixedDividend:"
         + c_fixedDividend + " parValue:" + c_parValue;
     }
